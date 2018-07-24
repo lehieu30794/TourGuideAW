@@ -13,14 +13,27 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView resort = (TextView) findViewById(R.id.resort);
 
+        // Start Resort Activity
+        TextView resort = (TextView) findViewById(R.id.resort);
         resort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent (MainActivity.this, Resort.class);
+                Intent i = new Intent (MainActivity.this, ResortActivity.class);
                 startActivity(i);
             }
         });
+
+
+        // Start TouristAttractions Activity
+        TextView  touristActtractions = (TextView) findViewById(R.id.tourist_attractions);
+        touristActtractions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent (MainActivity.this, TouristAttraction.class);
+                startActivity(i);
+            }
+        });
+
     }
 }

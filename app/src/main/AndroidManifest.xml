@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TouristAttraction" />
-        <activity android:name=".Resort"></activity>
+        <activity android:name=".ResortActivity"></activity>
     </application>
 
 </manifest>
