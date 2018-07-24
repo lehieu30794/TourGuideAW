@@ -36,7 +36,8 @@ public class PlaceAdapter extends ArrayAdapter<PlaceInfo> {
         placeName.setText(currentPlaceInfo.getPlaceName());
 
         TextView placeDetail = (TextView) convertView.findViewById(R.id.place_detail);
-        placeDetail.setText(currentPlaceInfo.getPlaceInfo());
+        placeDetail.setText(currentPlaceInfo.getPlaceDetail());
+
 
         return convertView;
     }

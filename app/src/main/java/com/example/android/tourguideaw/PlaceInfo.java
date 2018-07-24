@@ -15,7 +15,7 @@ public class PlaceInfo {
         return mPlaceName;
     }
 
-    public String getPlaceInfo (){
-        return getPlaceInfo();
+    public String getPlaceDetail (){
+        return mPlaceDetail;
     }
 }
