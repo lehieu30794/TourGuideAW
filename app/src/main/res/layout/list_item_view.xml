@@ -3,7 +3,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:paddingRight="16dp"
+    android:id="@+id/list_item_view">
 
     <!-- Include other widget or layout tags here. These are considered
             "child views" or "children" of the linear layout -->
