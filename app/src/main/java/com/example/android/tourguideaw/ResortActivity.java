@@ -16,7 +16,10 @@ public class ResortActivity extends AppCompatActivity {
 
         ArrayList<PlaceInfo> placeInfo = new ArrayList<PlaceInfo>();
 
-        placeInfo.add(new PlaceInfo("Ba Na hills", "Bà Nà Hill Station is a hill station "));
+        placeInfo.add(new PlaceInfo("Ba Na hills", "Bà Nà Hill Station is a hill station is a hill station and resort " +
+                "located in the Trường Sơn Mountains west of the city of Da Nang, in central Vietnam. " +
+                "The station, advertised as \"the Da Lat of Danang province\" by local tourism authorities, was founded in 1919 by French colonists. " +
+                "Linh Ung Pagoda is situated near the station, with a cable car nearby to carry tourists to and from the resort."));
 
         PlaceAdapter placeInfoAdapter = new PlaceAdapter(this, placeInfo);
 
