@@ -6,9 +6,12 @@ public class PlaceInfo {
 
     private String mPlaceDetail;
 
-    public PlaceInfo(String placeName, String placeInfo){
+    private int mImageResource;
+
+    public PlaceInfo(String placeName, String placeInfo, int imageResource){
         mPlaceName = placeName;
         mPlaceDetail = placeInfo;
+        mImageResource = imageResource;
     }
 
     public String getPlaceName (){
@@ -17,5 +20,9 @@ public class PlaceInfo {
 
     public String getPlaceDetail (){
         return mPlaceDetail;
+    }
+
+    public int getImageResource(){
+        return mImageResource;
     }
 }
