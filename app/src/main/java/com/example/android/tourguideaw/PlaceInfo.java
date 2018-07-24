@@ -6,5 +6,16 @@ public class PlaceInfo {
 
     private String mPlaceDetail;
 
-    public PlaceInfo(String a, String b){}
+    public PlaceInfo(String placeName, String placeInfo){
+        mPlaceName = placeName;
+        mPlaceDetail = placeInfo;
+    }
+
+    public String getPlaceName (){
+        return mPlaceName;
+    }
+
+    public String getPlaceInfo (){
+        return getPlaceInfo();
+    }
 }
