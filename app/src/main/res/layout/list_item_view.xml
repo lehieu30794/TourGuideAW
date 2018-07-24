@@ -9,8 +9,8 @@
             "child views" or "children" of the linear layout -->
     <ImageView
         android:id="@+id/place_image"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_width="88dp"
+        android:layout_height="88dp" />
 
     <TextView
         android:id="@+id/place_name"

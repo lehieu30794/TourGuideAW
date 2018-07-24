@@ -41,18 +41,18 @@ public class PlaceAdapter extends ArrayAdapter<PlaceInfo> {
 
         //Add image to list_item_view
         ImageView placeImage = (ImageView) convertView.findViewById(R.id.place_image);
-       /* //First need to use setImageResource, which a method of ImageView. Only call getImageResource after that,
+        //First need to use setImageResource, which a method of ImageView. Only call getImageResource after that,
         //which is defined by myself
-        placeImage.setImageResource(currentPlaceInfo.getImageResource());*/
+        placeImage.setImageResource(currentPlaceInfo.getImageResource());
 
 
-       //Why need to do a boolean, why not directly like mine above
+       /*//Why need to do a boolean, why not directly like mine above
        if (currentPlaceInfo.hasImage()){
            placeImage.setImageResource(currentPlaceInfo.getImageResource());
            placeImage.setVisibility(View.VISIBLE);
        } else {
            placeImage.setVisibility(View.GONE);
-       }
+       }*/
 
         return convertView;
     }

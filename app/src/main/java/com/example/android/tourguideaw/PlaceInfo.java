@@ -6,7 +6,9 @@ public class PlaceInfo {
 
     private String mPlaceDetail;
 
-    private int mImageResource = NO_IMAGE_PROVIDED;
+    private int mImageResource;
+
+//    private int mImageResource = NO_IMAGE_PROVIDED;
 
     // need to understand this!
     private static final int NO_IMAGE_PROVIDED = -1;
@@ -29,8 +31,8 @@ public class PlaceInfo {
         return mImageResource;
     }
 
-    // Need to understand this
+  /*  // Need to understand this
     public boolean hasImage(){
         return mImageResource != NO_IMAGE_PROVIDED;
-    }
+    }*/
 }
