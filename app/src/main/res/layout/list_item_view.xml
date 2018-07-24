@@ -1,9 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp">
+    android:orientation="horizontal">
 
     <!-- Include other widget or layout tags here. These are considered
             "child views" or "children" of the linear layout -->
@@ -30,7 +28,7 @@
             android:id="@+id/place_detail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxLines="5" />
+            android:maxLines="4" />
     </LinearLayout>
 
 </LinearLayout>
