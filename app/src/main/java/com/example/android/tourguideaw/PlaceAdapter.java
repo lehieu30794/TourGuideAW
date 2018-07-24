@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -37,6 +38,12 @@ public class PlaceAdapter extends ArrayAdapter<PlaceInfo> {
 
         TextView placeDetail = (TextView) convertView.findViewById(R.id.place_detail);
         placeDetail.setText(currentPlaceInfo.getPlaceDetail());
+
+        //Add image to list_item_view
+        ImageView placeImage = (ImageView) convertView.findViewById(R.id.place_image);
+        //First need to use setImageResource, which a method of ImageView. Only call getImageResource after that,
+        //which is defined by myself
+        placeImage.setImageResource(currentPlaceInfo.getImageResource());
 
 
         return convertView;
