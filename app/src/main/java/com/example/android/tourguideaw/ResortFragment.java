@@ -21,7 +21,7 @@ public class ResortFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment. This layout must be a container
         View rootView = inflater.inflate(R.layout.list_item_view,
                 container, false);
 
