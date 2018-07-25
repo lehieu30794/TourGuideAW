@@ -19,18 +19,17 @@ public class MainActivity extends AppCompatActivity {
         resort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent (MainActivity.this, ResortActivity.class);
+                Intent i = new Intent(MainActivity.this, ResortActivity.class);
                 startActivity(i);
             }
         });
 
-
-        // Start TouristAttractions Activity
-        TextView  touristActtractions = (TextView) findViewById(R.id.tourist_attractions);
-        touristActtractions.setOnClickListener(new View.OnClickListener() {
+        // Start TouristAttraction Activity
+        TextView touristActtraction = (TextView) findViewById(R.id.tourist_attractions);
+        touristActtraction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent (MainActivity.this, TouristAttraction.class);
+                Intent i = new Intent(MainActivity.this, TouristAttraction.class);
                 startActivity(i);
             }
         });
