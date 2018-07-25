@@ -54,7 +54,7 @@ public class TouristAttraction extends AppCompatActivity {
 
         PlaceAdapter placeInfoAdapter = new PlaceAdapter(this, placeInfo);
 
-        ListView resortListView = (ListView) findViewById(R.id.tourist_attraction_list_view);
-        resortListView.setAdapter(placeInfoAdapter);
+        ListView touristAttractionListView = (ListView) findViewById(R.id.tourist_attraction_list_view);
+        touristAttractionListView.setAdapter(placeInfoAdapter);
     }
 }
