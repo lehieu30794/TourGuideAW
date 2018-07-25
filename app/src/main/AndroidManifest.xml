@@ -16,8 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResortActivity" />
-        <activity android:name=".TouristAttraction"></activity>
+        <activity
+            android:name=".ResortActivity"
+            android:label="Resort"
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.tourguideaw.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".TouristAttraction"
+            android:label="Attraction"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.android.tourguideaw.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
