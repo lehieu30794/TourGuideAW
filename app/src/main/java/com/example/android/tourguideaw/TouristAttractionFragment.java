@@ -23,7 +23,7 @@ public class TouristAttractionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Use LayoutInflater class object to inflate root layout
-       View rootView = inflater.inflate(R.layout.fragment_resort, container, false);
+       View rootView = inflater.inflate(R.layout.activity_tourist_attraction, container, false);
 
         ArrayList<PlaceInfo> placeInfo = new ArrayList<PlaceInfo>();
 
