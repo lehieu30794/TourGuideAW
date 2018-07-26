@@ -1,6 +1,7 @@
 package com.example.android.tourguideaw;
 
 import android.content.Intent;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,26 +14,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //FragmentPagerAdapter can replace for sending intents to call an activity
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewPager);
 
-        // Start Resort Activity
-        TextView resort = (TextView) findViewById(R.id.resort);
-        resort.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ResortActivity.class);
-                startActivity(i);
-            }
-        });
+        //getSupportFragmentManager() is fragment manager, we don't have to create a Fragment Manager ourselves
+        CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager());
 
-        // Start TouristAttraction Activity
-        TextView touristActtraction = (TextView) findViewById(R.id.tourist_attractions);
-        touristActtraction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, TouristAttraction.class);
-                startActivity(i);
-            }
-        });
-
+        viewPager.setAdapter(adapter);
     }
 }
