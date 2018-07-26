@@ -22,7 +22,7 @@ public class ResortFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment. This layout must be a container
-        View rootView = inflater.inflate(R.layout.list_item_view,
+        View rootView = inflater.inflate(R.layout.activity_resort,
                 container, false);
 
 
